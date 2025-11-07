@@ -26,9 +26,7 @@ public class Ventana_Insertar extends JDialog {
 	private JTextField textNombre;
 	private JPasswordField passwordField;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		try {
 			Ventana_Insertar dialog = new Ventana_Insertar();
@@ -39,9 +37,7 @@ public class Ventana_Insertar extends JDialog {
 		}
 	}
 
-	/**
-	 * Create the dialog.
-	 */
+	
 	public Ventana_Insertar() {
 		setTitle("Crear nuevo usuario");
 		setBounds(100, 100, 450, 300);

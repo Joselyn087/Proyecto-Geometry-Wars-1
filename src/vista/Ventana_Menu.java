@@ -108,6 +108,27 @@ public class Ventana_Menu extends JFrame {
 	}
 	
 	
+	public JButton getBtnMostrar() {
+		return btnMostrar;
+	}
+
+	public JButton getBtnActualizar() {
+		return btnActualizar;
+	}
+
+	public JButton getBtnEliminar() {
+		return btnEliminar;
+	}
+
+	public JButton getBtnConfiguracion() {
+		return btnConfiguracion;
+	}
+
+	public JLabel getLblTitulo() {
+		return lblTitulo;
+	}
+
+
 	public void setActionListener(ActionListener listener) {
 		
 		btnInsertar.addActionListener(listener);
