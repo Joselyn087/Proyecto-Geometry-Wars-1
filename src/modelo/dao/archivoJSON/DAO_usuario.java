@@ -27,7 +27,7 @@ public class DAO_usuario implements IDAOUsuario {
 	private ListaUsuarios dataset;
 	private EscritorJSON escritor;
 	private LectorJSON lector;
-	public static final String FILE_NAME = "data/registroUsuario.json"; 
+	public static final String FILE_NAME = "data/RegistroUsuarios.json"; 
 
     /***********************************************
      * CONSTRUCTOR
@@ -38,7 +38,7 @@ public class DAO_usuario implements IDAOUsuario {
 		escritor = new EscritorJSON(dataset, FILE_NAME);
 		lector = new LectorJSON(dataset, FILE_NAME);
 		
-		cargarPreguntas();
+		cargarUsuarios();
 	}
 
     /***********************************************
@@ -47,7 +47,7 @@ public class DAO_usuario implements IDAOUsuario {
      * Si falla la lectura del archivo se cargar datos de PRUEBA
      ***********************************************/	
 	@Override
-	public void cargarPreguntas() {
+	public void cargarUsuarios() {
 		try {
 			lector.readAll();
 		} catch (IOException ex) {

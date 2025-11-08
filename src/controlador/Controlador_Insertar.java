@@ -62,9 +62,9 @@ public class Controlador_Insertar implements ActionListener {
         
         // 4. Mostrar un mensaje según el resultado
         if (seAgrego) {
-            vista.mostrarMensaje("Pregunta agregada correctamente.");
+            vista.mostrarMensaje("Usuario agregada correctamente.");
         } else {
-            vista.mostrarMensaje("Pregunta NO fue agregada correctamente.");
+            vista.mostrarMensaje("Usuario NO fue agregada correctamente.");
         }
         
         // 5. Cerrar la ventana de la vista agregar 

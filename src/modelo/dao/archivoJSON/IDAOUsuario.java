@@ -21,7 +21,7 @@ public interface IDAOUsuario {
     /**
      * Se encarga de leer los datos y cargarlos al dataset.
      */
-    public abstract void cargarPreguntas();
+    public abstract void cargarUsuarios();
 
     /**
      * Se encarga de almacenar o guardar los datos que estan en el dataset.
