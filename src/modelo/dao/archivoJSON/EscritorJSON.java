@@ -41,10 +41,12 @@ public class EscritorJSON {
 			if (usuario != null) {
 				JSONObject elemento_json = new JSONObject();
 				elemento_json.put(Usuario.NOMBRE, usuario.getNombre());
-				elemento_json.put(Usuario.CONTRASENA, usuario.isContrasena());
+				elemento_json.put(Usuario.CONTRASENA, usuario.getContrasena());
 				
 				//añadir el  resto 
 				jsonArray.put(elemento_json);
+				System.out.println("Archivo JSON guardado en: " + file.getAbsolutePath());
+
 			}
 		}
 

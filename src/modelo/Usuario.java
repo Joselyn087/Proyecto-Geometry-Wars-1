@@ -51,7 +51,7 @@ public class Usuario {
     
     
 
-    public char[] isContrasena() {
+    public char[] getContrasena() {
         return contrasena;
     }
 
@@ -88,6 +88,6 @@ public class Usuario {
    
     @Override
     public String toString() {
-        return "Usuario - nombre: " + nombre + ", contrasena: " + contrasena;
+        return "Usuario - nombre: " + nombre + ", contrasena: " + String.valueOf(contrasena);
     }
 }

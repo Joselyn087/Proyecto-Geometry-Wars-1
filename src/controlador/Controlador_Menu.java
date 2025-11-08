@@ -33,7 +33,7 @@ public class Controlador_Menu implements ActionListener{
     public void actionPerformed(ActionEvent e){
 	
 	if (e.getSource() == vista.getBtnInsertar()){ // Opción: Mostrar preguntas almacenadas
-        	vistaI = new Ventana_Insertar(vista);            
+        	vistaI = new Ventana_Insertar(vista);       
         	controladorI = new Controlador_Insertar(vistaI, modelo);
         }/*else if (e.getSource() == vista.getjM_agregar()){ // Opción: Agregar nueva pregunta
         	vistaA = new Vista_Agregar(vista);

@@ -27,7 +27,7 @@ public class DAO_usuario implements IDAOUsuario {
 	private ListaUsuarios dataset;
 	private EscritorJSON escritor;
 	private LectorJSON lector;
-	public static final String FILE_NAME = "data/RegistroUsuarios.json"; 
+	public static final String FILE_NAME = "data/registroUsuarios.json"; 
 
     /***********************************************
      * CONSTRUCTOR
@@ -64,6 +64,7 @@ public class DAO_usuario implements IDAOUsuario {
 	public void guardarDataset() {
 		try {
 			escritor.writeAll();
+			System.out.println(">>> Guardando dataset en JSON...");
 		} catch (IOException ex) {
 			System.err.println("Error al guardar JSON: " + ex.getMessage());
 		}
