@@ -14,21 +14,21 @@ public class Usuario {
 	public static final String ID = "id";
 
     private String nombre;
-    private String contrasena; 
+    private char[] contrasena; 
     private int nivel;
     private int puntaje;
     private int id;
    
     public Usuario() {
         this.nombre = "";
-        this.contrasena = "";
+        this.contrasena = new char[10];
         this.nivel = 0;
         this.puntaje = 0;
         this.id = 0;
     }
 
    
-    public Usuario(String nombre, String contrasena, int nivel) {
+    public Usuario(String nombre, char[] contrasena, int nivel) {
         this.nombre = nombre;
         this.contrasena = contrasena;
         this.nivel = nivel;
@@ -51,11 +51,11 @@ public class Usuario {
     
     
 
-    public String isContrasena() {
+    public char[] isContrasena() {
         return contrasena;
     }
 
-    public void setContrasena(String contrasena) {
+    public void setContrasena(char[] contrasena) {
         this.contrasena = contrasena;
     }
     public boolean validarContrasena(String contrasena) {

@@ -50,7 +50,7 @@ public class LectorJSON {
                 JSONObject elemento = jsonArray.getJSONObject(i);
                 Usuario usuario = new Usuario(
                     elemento.getString("nombre"),
-                    elemento.getString("contrasena"),
+                    elemento.getString("contrasena").toCharArray(),
                     elemento.getInt("nivel")
                     //areglar constructor y agregar faltantes
                 );
