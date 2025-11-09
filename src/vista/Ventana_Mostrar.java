@@ -7,6 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JComboBox;
 
 /**
  * @author josel
@@ -39,25 +41,22 @@ public class Ventana_Mostrar extends JDialog {
 	public Ventana_Mostrar() {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
-		contentPanel.setLayout(new FlowLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		contentPanel.setLayout(null);
 		{
-			JPanel buttonPane = new JPanel();
-			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-			{
-				JButton okButton = new JButton("OK");
-				okButton.setActionCommand("OK");
-				buttonPane.add(okButton);
-				getRootPane().setDefaultButton(okButton);
-			}
-			{
-				JButton cancelButton = new JButton("Cancel");
-				cancelButton.setActionCommand("Cancel");
-				buttonPane.add(cancelButton);
-			}
+			JPanel panel = new JPanel();
+			panel.setBounds(44, 120, 213, 23);
+			contentPanel.add(panel);
 		}
+		
+		JLabel lblNewLabel = new JLabel("Buscar por: ");
+		lblNewLabel.setBounds(44, 62, 76, 12);
+		contentPanel.add(lblNewLabel);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setToolTipText("");
+		comboBox.setBounds(188, 87, 132, 23);
+		contentPanel.add(comboBox);
 	}
-
 }
