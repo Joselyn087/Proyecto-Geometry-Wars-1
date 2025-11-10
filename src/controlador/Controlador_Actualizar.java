@@ -14,6 +14,7 @@ import vista.Ventana_Insertar;
  * @description Breve descripción de la clase
  */
 
+//ya
 public class Controlador_Actualizar implements ActionListener {
 	
 	private Actualizar vista;
